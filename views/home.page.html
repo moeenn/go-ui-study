@@ -1,0 +1,10 @@
+{{ define "title" }}Home{{ end }}
+{{ template "base_layout.start" . }}
+
+<div class="container">
+  {{ range .Headings }}
+    {{ template "heading_section.partial" . }}
+  {{ end }}
+</div>
+
+{{ template "base_layout.end" . }}

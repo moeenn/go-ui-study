@@ -1,0 +1,22 @@
+{{ define "title" }}Login{{ end }}
+{{ template "auth_layout.start" . }}
+
+<form>
+  <h4>Login</h4>
+
+  <div class="auth_fields">
+    <fieldset>
+      <label for="email">Email</label>
+      <input name="email" type="email" required />
+    </fieldset>
+
+    <fieldset>
+      <label for="password">Password</label>
+      <input name="password" type="password" required min="8" />
+    </fieldset>
+  </div>
+  
+  <button class="submit">Submit</button>
+</form>
+
+{{ template "auth_layout.end" . }}

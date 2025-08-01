@@ -1,0 +1,21 @@
+#auth_section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: var(--gray-one);
+    padding: var(--space) 0;
+
+    .auth_card {
+        background-color: white;
+        border-radius: var(--border-radius);
+        padding: var(--space);
+        margin: auto;
+        border: 1px solid var(--gray-two);
+        min-width: min(25rem, 100%);
+        box-shadow: var(--shadow);
+
+        .auth_fields {
+            padding: var(--space) 0;
+        }
+    }
+}

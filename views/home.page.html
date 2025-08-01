@@ -1,13 +1,9 @@
 {{ define "header" }}
 <title>Home</title>
-{{ end }}
-
-{{ template "base_layout.start" . }}
+{{ end }} {{ template "base_layout.start" . }}
 
 <div class="container">
-  {{ range .Headings }}
-    {{ template "heading_section.partial" . }}
-  {{ end }}
+    <h1>Hello world</h1>
 </div>
 
 {{ template "base_layout.end" . }}

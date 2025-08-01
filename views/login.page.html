@@ -1,8 +1,6 @@
 {{ define "header" }}
-<link rel="stylesheet" href="/public/auth.css" />
 <title>Login</title>
 {{ end }} {{ template "auth_layout.start" . }}
-
 <form>
     <h4>Login</h4>
 
@@ -10,6 +8,9 @@
         <fieldset>
             <label for="email">Email</label>
             <input name="email" type="email" required />
+            <span class="input_error"
+                >Please provide a valid email address</span
+            >
         </fieldset>
 
         <fieldset>
@@ -18,7 +19,16 @@
         </fieldset>
     </div>
 
-    <button class="submit">Submit</button>
+    <div class="auth_actions">
+        <label>
+            <input type="checkbox" name="rememberMe" />
+            Remember me
+        </label>
+
+        <a href="/forgot-password">Forgot Password</a>
+    </div>
+
+    <button class="submit w-full">Submit</button>
 </form>
 
 {{ template "auth_layout.end" . }}

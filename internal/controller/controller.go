@@ -21,4 +21,5 @@ func NewController(logger *slog.Logger, templates *templates.Templates) Controll
 func (c Controller) RegisterRoutes(mux *http.ServeMux) {
 	mux.HandleFunc("/", c.HomePage)
 	mux.HandleFunc("GET /login", c.LoginPage)
+	mux.HandleFunc("GET /forgot-password", c.ForgotPassword)
 }

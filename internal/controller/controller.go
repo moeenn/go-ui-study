@@ -22,4 +22,5 @@ func (c Controller) RegisterRoutes(mux *http.ServeMux) {
 	mux.HandleFunc("/", c.HomePage)
 	mux.HandleFunc("GET /login", c.LoginPage)
 	mux.HandleFunc("GET /forgot-password", c.ForgotPassword)
+	mux.HandleFunc("GET /error", c.ErrorPage)
 }

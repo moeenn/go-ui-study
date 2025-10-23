@@ -1,0 +1,9 @@
+{{ define "header" }}
+<title>Error</title>
+{{ end }} {{ template "base_layout.start" . }}
+
+<div id="error_page" class="container">
+  <p>{{ .StatusCode }} - {{ .Error }}</p>
+</div>
+
+{{ template "base_layout.end" . }}

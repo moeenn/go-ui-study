@@ -7,6 +7,7 @@ const (
 	TemplateLoginPage          TemplateName = "login.page.html"
 	TemplateForgotPasswordPage TemplateName = "forgot_password.page.html"
 	TemplateHeadingSection     TemplateName = "heading_section.partial"
+	TemplateErrorPage          TemplateName = "error.page.html"
 )
 
 // ---------------------------------------------------------------------------
@@ -14,6 +15,10 @@ const (
 // Page args.
 //
 // ---------------------------------------------------------------------------
+type ErrorPageArgs struct {
+	StatusCode int
+	Error      string
+}
 
 // ---------------------------------------------------------------------------
 //

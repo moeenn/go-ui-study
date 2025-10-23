@@ -12,9 +12,15 @@
         {{ end }} {{ define "base_layout.end" }}
     </body>
 </html>
-{{ end }} {{ define "auth_layout.start" }} {{ template "base_layout.start" . }}
+{{ end }}
 
+{{ define "auth_layout.start" }}
+{{ template "base_layout.start" . }}
 <section id="auth_section">
-    <div class="auth_card">{{ end }} {{ define "auth_layout.end" }}</div>
+    <div class="auth_card">
+{{ end }}
+
+{{ define "auth_layout.end" }}</div>
 </section>
-{{ template "base_layout.end" . }} {{ end }}
+{{ template "base_layout.end" . }}
+{{ end }}

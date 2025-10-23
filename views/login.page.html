@@ -1,6 +1,8 @@
 {{ define "header" }}
 <title>Login</title>
-{{ end }} {{ template "auth_layout.start" . }}
+{{ end }}
+
+{{ template "auth_layout.start" . }}
 <form>
     <h4>Login</h4>
 
@@ -30,5 +32,4 @@
 
     <button class="submit w-full">Submit</button>
 </form>
-
 {{ template "auth_layout.end" . }}

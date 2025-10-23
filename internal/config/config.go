@@ -15,7 +15,7 @@ type ServerConfig struct {
 func NewServerConfig() ServerConfig {
 	return ServerConfig{
 		Host:         "0.0.0.0",
-		Port:         "3000",
+		Port:         "8000",
 		ReadTimeout:  time.Second * 10,
 		WriteTimeout: time.Second * 20,
 	}

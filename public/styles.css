@@ -212,3 +212,10 @@ form {
         }
     }
 }
+
+#error_page {
+    p {
+        text-align: center;
+        padding: var(--space-10) 0;
+    }
+}
